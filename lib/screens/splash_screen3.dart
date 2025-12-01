@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'splash_screen2.dart';
 
-class SplashScreen1 extends StatelessWidget {
-  const SplashScreen1({super.key});
+class SplashScreen3 extends StatelessWidget {
+  const SplashScreen3({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -24,7 +23,7 @@ class SplashScreen1 extends StatelessWidget {
                 shape: BoxShape.circle,
                 color: Colors.amber,
                 image: DecorationImage(
-                  image: AssetImage("assets/images/splash1.png"),
+                  image: AssetImage("assets/images/splash3.png"),
                   fit: BoxFit.cover,
                   alignment: Alignment.center,
                 ),
@@ -68,25 +67,25 @@ class SplashScreen1 extends StatelessWidget {
                   margin: const EdgeInsets.symmetric(horizontal: 4),
                   decoration: const BoxDecoration(
                     shape: BoxShape.circle,
+                    color: Color(0xFFedede9), // non-aktif
+                  ),
+                ),
+                Container(
+                  width: 15,
+                  height: 15,
+                  margin: const EdgeInsets.symmetric(horizontal: 4),
+                  decoration: const BoxDecoration(
+                    shape: BoxShape.circle,
+                    color: Color(0xFFedede9), // non-aktif
+                  ),
+                ),
+                Container(
+                  width: 15,
+                  height: 15,
+                  margin: const EdgeInsets.symmetric(horizontal: 4),
+                  decoration: const BoxDecoration(
+                    shape: BoxShape.circle,
                     color: Color(0xFF84a98c), // aktif
-                  ),
-                ),
-                Container(
-                  width: 15,
-                  height: 15,
-                  margin: const EdgeInsets.symmetric(horizontal: 4),
-                  decoration: const BoxDecoration(
-                    shape: BoxShape.circle,
-                    color: Color(0xFFedede9), // non-aktif
-                  ),
-                ),
-                Container(
-                  width: 15,
-                  height: 15,
-                  margin: const EdgeInsets.symmetric(horizontal: 4),
-                  decoration: const BoxDecoration(
-                    shape: BoxShape.circle,
-                    color: Color(0xFFedede9), // non-aktif
                   ),
                 ),
               ],
@@ -102,10 +101,7 @@ class SplashScreen1 extends StatelessWidget {
                 height: 40,
                 child: ElevatedButton(
                   onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => const SplashScreen2()),
-                    );
+                    
                   },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: const Color(0xFF84a98c),
